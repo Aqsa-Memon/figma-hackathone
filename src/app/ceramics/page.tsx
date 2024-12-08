@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Ceramics() {
     return (
       <div className="bg-white min-h-screen flex flex-col items-center py-10 px-4 md:px-10">
@@ -5,7 +7,7 @@ export default function Ceramics() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl">
           {/* Item 1 */}
           <div className="flex flex-col items-center">
-            <img
+            <Image
               src="Product Card1.png"
               alt="The Dandy Chair"
               className="rounded-lg shadow-md w-full"
@@ -15,7 +17,7 @@ export default function Ceramics() {
           </div>
           {/* Item 2 */}
           <div className="flex flex-col items-center">
-            <img
+            <Image
               src="Product Card2.png"
               alt="Rustic Vase Set"
               className="rounded-lg shadow-md w-full"
@@ -25,7 +27,7 @@ export default function Ceramics() {
           </div>
           {/* Item 3 */}
           <div className="flex flex-col items-center">
-            <img
+            <Image
               src="Product Card3.png"
               alt="The Silky Vase"
               className="rounded-lg shadow-md w-full"
@@ -35,7 +37,7 @@ export default function Ceramics() {
           </div>
           {/* Item 4 */}
           <div className="flex flex-col items-center">
-            <img
+            <Image
               src="Product Card4.png"
               alt="The Lucky Lamp"
               className="rounded-lg shadow-md w-full"

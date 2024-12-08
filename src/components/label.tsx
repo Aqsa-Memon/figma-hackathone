@@ -25,7 +25,7 @@ const Label = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
             <FaMoneyCheckAlt className="black-700 text-4xl mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-black-800">Unbeattable prices</h3>
-            <p className="text-gray-600 mt-2">For our materials and quality you won't find better prices anywhere.</p>
+            <p className="text-gray-600 mt-2">For our materials and quality you {`won't` }find better prices anywhere.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">

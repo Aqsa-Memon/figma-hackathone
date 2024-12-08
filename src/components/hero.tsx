@@ -1,15 +1,5 @@
-// import Navbar from "./navbar";
 
-// export default function Home() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <main className="p-4">
-//         <h1 className="text-xl">Welcome to Avion</h1>
-//       </main>
-//     </div>
-//   );
-// }
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -32,7 +22,7 @@ const Hero = () => {
 
       {/* Right Section */}
       <div className="col-span-12 md:col-span-6 flex items-center justify-center bg-[#D6DFE5] rounded-lg">
-        <img
+        <Image
           src="/container.png"
           alt="Modern Chair"
           className="w-[80%] h-auto object-contain"
