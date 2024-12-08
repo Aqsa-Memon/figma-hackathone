@@ -25,6 +25,7 @@ const Hero = () => {
         <Image
           src="/container.png"
           alt="Modern Chair"
+          height={100} width={100}
           className="w-[80%] h-auto object-contain"
         />
       </div>

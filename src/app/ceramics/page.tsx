@@ -8,8 +8,9 @@ export default function Ceramics() {
           {/* Item 1 */}
           <div className="flex flex-col items-center">
             <Image
-              src="Product Card1.png"
+              src="/Product Card1.png"
               alt="The Dandy Chair"
+              width={100}height={100}
               className="rounded-lg shadow-md w-full"
             />
             <h2 className="text-lg mt-4 font-semibold">The Dandy Chair</h2>
@@ -18,8 +19,9 @@ export default function Ceramics() {
           {/* Item 2 */}
           <div className="flex flex-col items-center">
             <Image
-              src="Product Card2.png"
+              src="/Product Card2.png"
               alt="Rustic Vase Set"
+              width={100}height={100}
               className="rounded-lg shadow-md w-full"
             />
             <h2 className="text-lg mt-4 font-semibold">Rustic Vase Set</h2>
@@ -28,8 +30,9 @@ export default function Ceramics() {
           {/* Item 3 */}
           <div className="flex flex-col items-center">
             <Image
-              src="Product Card3.png"
+              src="/Product Card3.png"
               alt="The Silky Vase"
+              width={100}height={100}
               className="rounded-lg shadow-md w-full"
             />
             <h2 className="text-lg mt-4 font-semibold">The Silky Vase</h2>
@@ -38,8 +41,8 @@ export default function Ceramics() {
           {/* Item 4 */}
           <div className="flex flex-col items-center">
             <Image
-              src="Product Card4.png"
-              alt="The Lucky Lamp"
+              src="/Product Card4.png"
+              alt="The Lucky Lamp" width={100}height={100}
               className="rounded-lg shadow-md w-full"
             />
             <h2 className="text-lg mt-4 font-semibold">The Lucky Lamp</h2>
