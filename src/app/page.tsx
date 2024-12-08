@@ -6,6 +6,7 @@ import React from 'react'
 import Ceramics from './ceramics/page'
 import PopularProducts from './popularproduct/page'
 import Signup from '@/components/signup '
+import Outlats from '@/components/outlats'
 
 const Page = () => {
   return (
@@ -16,6 +17,7 @@ const Page = () => {
       <Ceramics />
       <PopularProducts />
       <Signup />
+      <Outlats />
        <Footer />
     </div>
   )

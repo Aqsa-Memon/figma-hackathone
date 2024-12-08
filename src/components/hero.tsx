@@ -23,12 +23,13 @@ const Hero = () => {
       {/* Right Section */}
       <div className="col-span-12 md:col-span-6 flex items-center justify-center bg-[#D6DFE5] rounded-lg">
         <Image
-          src="/container.png"
+          src="/Container.png"
           alt="Modern Chair"
           height={100} width={100}
           className="w-[80%] h-auto object-contain"
         />
       </div>
+
     </div>
   );
 };
