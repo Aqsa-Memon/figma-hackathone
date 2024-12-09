@@ -59,7 +59,7 @@ const Header = () => {
               <nav className="flex flex-col gap-4 text-lg text-[#726E8D]">
                 <Link href="/" className="hover:text-[#5a526c]">
                 Home                </Link>
-                <Link href="/Ceramics" className="hover:text-[#5a526c]">
+                <Link href="/ceramics" className="hover:text-[#5a526c]">
                   Ceramics
                 </Link>
                 <Link href="/allProducts" className="hover:text-[#5a526c]">
