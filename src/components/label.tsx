@@ -1,44 +1,49 @@
-import React from 'react'
 
-import { FaShoppingBag, FaTruck, FaMoneyCheckAlt, FaTags } from 'react-icons/fa';
+import { FaShippingFast, FaHandHoldingHeart, FaTags, FaRecycle } from "react-icons/fa";
 
-const Label = () => {
+export default function BrandDifference() {
   return (
-    <section className="bg-white py-12">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold text-[#2A254B] mb-8">What Makes Our Brand different </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-6">
-        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-            <FaTruck className="text-black-700 text-4xl mx-auto mb-4" />
-
-            <h3 className="text-xl font-semibold text-black-800">Next day as standerd</h3>
-            <p className="text-gray-600 mt-2">Order before 3pm and get your order the next day as standerd.</p>
+    <section className="bg-white py-16 px-4 md:px-10">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10">
+          What makes our brand different
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {/* Feature 1 */}
+          <div className="flex flex-col items-center text-center">
+            <FaShippingFast className="text-4xl text-gray-800 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Next day as standard</h3>
+            <p className="text-gray-500">
+              Order before 9pm and get your items the next day as standard.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-            <FaShoppingBag className="text-black-700 text-4xl mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-black-800">Made by true artisans</h3>
-            <p className="text-gray-600 mt-2">Handmade crafted goods made with real passion and craftmanship.</p>
+          {/* Feature 2 */}
+          <div className="flex flex-col items-center text-center">
+            <FaHandHoldingHeart className="text-4xl text-gray-800 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Made by true artisans</h3>
+            <p className="text-gray-500">
+              Handmade crafted goods made with real passion and craftsmanship.
+            </p>
           </div>
-          
-        
-          
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-            <FaMoneyCheckAlt className="black-700 text-4xl mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-black-800">Unbeattable prices</h3>
-            <p className="text-gray-600 mt-2">For our materials and quality you {`won't` }find better prices anywhere.</p>
+          {/* Feature 3 */}
+          <div className="flex flex-col items-center text-center">
+            <FaTags className="text-4xl text-gray-800 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Unbeatable prices</h3>
+            <p className="text-gray-500">
+              For our materials and quality, you{ `won’t` }find better prices anywhere.
+            </p>
           </div>
-          
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
-            <FaTags className="text-black-700 text-4xl mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-black-800">Recycled packaging</h3>
-            <p className="text-gray-600 mt-2">We use 100% recycled packaging to ensure our footprint is manageable.</p>
+          {/* Feature 4 */}
+          <div className="flex flex-col items-center text-center">
+            <FaRecycle className="text-4xl text-gray-800 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Recycled packaging</h3>
+            <p className="text-gray-500">
+              We use 100% recycled materials to reduce our footprint and make a
+              sustainable impact.
+            </p>
           </div>
-
         </div>
       </div>
     </section>
   );
-};
-
-
-export default Label
+}

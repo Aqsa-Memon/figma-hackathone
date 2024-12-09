@@ -57,18 +57,18 @@ const Header = () => {
                 <SheetTitle>Navigation</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-4 text-lg text-[#726E8D]">
-                <Link href="/products" className="hover:text-[#5a526c]">
-                  Plant pots
-                </Link>
+                <Link href="/" className="hover:text-[#5a526c]">
+                Home                </Link>
                 <Link href="/Ceramics" className="hover:text-[#5a526c]">
                   Ceramics
                 </Link>
-                <Link href="/table" className="hover:text-[#5a526c]">
-                  Tables
+                <Link href="/allProducts" className="hover:text-[#5a526c]">
+                Products List
+
                 </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                  Chairs
-                </Link>
+                <Link href="/about" className="hover:text-[#5a526c]">
+                About Us          </Link>
+
                 <Link href="/" className="hover:text-[#5a526c]">
                   Crockery
                 </Link>
@@ -86,17 +86,16 @@ const Header = () => {
         {/* Desktop Navigation links */}
         <nav className="hidden lg:flex w-[675px] justify-between items-center h-1/2 text-[#726E8D]">
           <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Plant pots
+            Home
           </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
+          <Link href="/ceramics" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
             Ceramics
           </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Tables
+          <Link href="/allProducts" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
+           Products List
           </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Chairs
-          </Link>
+          <Link href="/about" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
+          About Us          </Link>
           <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
             Crockery
           </Link>

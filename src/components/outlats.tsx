@@ -21,7 +21,7 @@ export default function Outlats() {
           <div className="h-full">
             <Image
               src="/Image.png" // Replace with your actual image path
-              alt="Interior Design"height={100}width={100}
+              alt="Interior Design"height={200}width={200}
               className="object-cover w-full h-full"
             />
           </div>

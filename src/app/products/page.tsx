@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Footer from "@/components/footer"
-import Header from '@/components/navbar'
+import Header from '@/components/header'
 export default function ProductPage() {
   const [amount, setAmount] = useState(1)
 
@@ -28,7 +28,7 @@ export default function ProductPage() {
           {/* Image Section */}
           <div className="bg-gray-100">
             <Image
-              src="/Image Left.png"
+              src="/chair.png"
               alt="The Dandy Chair"
               width={600}
               height={600}

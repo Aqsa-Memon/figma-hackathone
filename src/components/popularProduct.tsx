@@ -13,7 +13,10 @@ export default function PopularProducts() {
               alt="The Poplar Suede Sofa"
               layout="fill"
               objectFit="cover"
-              className="rounded-md"
+              className="rounded-md "
+
+              
+              
             />
           </div>
           <h3 className="text-lg font-medium mt-4">The Poplar suede sofa</h3>
@@ -25,11 +28,14 @@ export default function PopularProducts() {
           <div className="w-full h-[300px] relative">
             <Image
               src="/chair1.png" // Update with actual image path
+              // 
               alt="The Dandy Chair"
               layout="fill"
               objectFit="cover"
               className="rounded-md"
-            />
+              
+
+          />
           </div>
           <h3 className="text-lg font-medium mt-4">The Dandy chair</h3>
           <p className="text-lg font-medium text-gray-700">£250</p>
@@ -44,6 +50,8 @@ export default function PopularProducts() {
               layout="fill"
               objectFit="cover"
               className="rounded-md"
+
+    
             />
           </div>
           <h3 className="text-lg font-medium mt-4">The Dandy chair</h3>
