@@ -1,11 +1,11 @@
 "use client";
 import { client } from "@/sanity/lib/client";
-import { Product } from "../../../../types/products";
-import { groq } from "next-sanity";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
 import { addToCart } from "@/app/actions/actions";
+import { Product } from "../../../../products";
+import { groq } from "next-sanity";
 
 interface ProductsPageProps {
   params: { slug: string }; // ✅ FIXED: Promise hata diya
@@ -85,17 +85,6 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
               ))}
             </ul>
           )}
-
-          {/* Dimensions */}
-          {product.dimensions && typeof product.dimensions === "object" && (
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold">Dimensions:</h3>
-              <p className="text-gray-700">
-                {product.dimensions?.height} x {product.dimensions?.width} x {product.dimensions?.depth}
-              </p>
-            </div>
-          )}
-
           {/* Custom Button */}
           <button
             className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg transition-all duration-300"
