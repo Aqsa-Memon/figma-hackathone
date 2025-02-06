@@ -1,26 +1,22 @@
-import Footer from '@/components/footer'
-import Hero from '@/components/hero'
-import Label from '@/components/label'
-import Header from '@/components/header'
-import React from 'react'
-import Ceramics from './ceramics/page'
-import Signup from '@/components/signup '
-import Outlats from '@/components/outlats'
-import PopularProducts from '@/components/popularProduct'
+import Ceramics2 from '@/components/ceramics';
+import Club from '@/components/club';
+import Studio from '@/components/studio';
+import React from 'react';
+import ProductsPage from './products/page';
+import Brand from '@/components/brand';
+import Hero from './hero';
 
-const Page = () => {
+const page = () => {
   return (
     <div>
-      <Header />
-      <Hero />
-      <Label />
-      <Ceramics />
-      <PopularProducts />
-      <Signup />
-      <Outlats />
-       <Footer />
+      <Hero/>
+      <Brand/>
+      <ProductsPage />
+      <Ceramics2 />
+      <Club/>
+      <Studio/>
     </div>
   )
 }
 
-export default Page
+export default page;

@@ -1,114 +1,84 @@
 "use client";
-
-
-import Link from "next/link";
-import { IoSearch } from "react-icons/io5";
+import React from "react";
+import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
-import { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { FaRegUserCircle } from "react-icons/fa";
+import Link from "next/link";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <>
-      <header className="max-w-[1440px] h-[132px] flex flex-col items-center bg-white px-10 lg:w-full mx-auto">
-        <div className="border-b-[0.5px] border-[#0000004f] h-1/2 w-full mx-auto flex justify-between items-center">
-          {/* Left: Search icon on large screens */}
-          <div className="flex items-center gap-3 lg:flex-1">
-            <div className="lg:block hidden">
-              <IoSearch className="text-xl" />
-            </div>
-          </div>
-
-          {/* Avion Title */}
-          <h1 className="text-[#22202E] text-2xl font-semibold text-left lg:text-center">
-            Avion
-          </h1>
-
-          {/* Right: Cart and Profile icons for large screens */}
-          <div className="hidden lg:flex gap-3 text-xl lg:flex-1 justify-end">
-            <MdOutlineShoppingCart />
-            <CgProfile />
-          </div>
-
-          {/* Mobile Menu Trigger */}
-          <Sheet>
-            <SheetTrigger>
-              <div
-                onClick={() => setIsOpen(true)}
-                className="cursor-pointer lg:hidden flex flex-col gap-1 font-light"
-              >
-                <span className="block w-6 h-1 bg-black"></span>
-                <span className="block w-6 h-1 bg-black"></span>
-                <span className="block w-6 h-1 bg-black"></span>
-              </div>
-            </SheetTrigger>
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
-              </SheetHeader>
-              <nav className="flex flex-col gap-4 text-lg text-[#726E8D]">
-                <Link href="/" className="hover:text-[#5a526c]">
-                Home                </Link>
-                <Link href="/ceramics" className="hover:text-[#5a526c]">
-                  Ceramics
-                </Link>
-                <Link href="/allProducts" className="hover:text-[#5a526c]">
-                Products List
-
-                </Link>
-                <Link href="/about" className="hover:text-[#5a526c]">
-                About Us          </Link>
-
-                <Link href="/" className="hover:text-[#5a526c]">
-                  Crockery
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                  Tableware
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                  Cutlery
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
+    <div className="relative max-w-full bg-[#FFFFFF] font-satoshi">
+      {/* Header Section */}
+      <header className="w-full h-[70px] flex items-center justify-between px-4 md:px-8 fixed top-0 left-0 z-50 shadow-md bg-white">
+        {/* Left Section: Search Icon */}
+        <div className="hidden md:block">
+          <CiSearch
+            size={24}
+            className="text-gray-600 cursor-pointer"
+          />
         </div>
 
-        {/* Desktop Navigation links */}
-        <nav className="hidden lg:flex w-[675px] justify-between items-center h-1/2 text-[#726E8D]">
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Home
-          </Link>
-          <Link href="/ceramics" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Ceramics
-          </Link>
-          <Link href="/allProducts" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-           Products List
-          </Link>
-          <Link href="/about" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-          About Us          </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Crockery
-          </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Tableware
-          </Link>
-          <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
-            Cutlery
-          </Link>
-        </nav>
+        {/* Center Section: Brand Name */}
+        <h1 className="text-lg md:text-xl font-normal text-black text-center font-[clash]">
+          Avion
+        </h1>
+
+        {/* Right Section: Icons */}
+        <div className="flex items-center space-x-4">
+          <CiSearch
+            size={24}
+            className="text-gray-600 cursor-pointer md:hidden"
+          />
+          <MdOutlineShoppingCart
+            size={24}
+            className="text-gray-600 cursor-pointer"
+          />
+          <FaRegUserCircle
+            size={24}
+            className="text-gray-600 cursor-pointer"
+          />
+        </div>
       </header>
-    </>
+
+      {/* Divider Line */}
+      <hr className="w-full border-b-2 border-gray-300 mt-[70px]" />
+
+      {/* Navigation Links */}
+      <nav className="flex flex-wrap justify-center gap-4 lg:gap-8 py-4">
+        <Link
+          href="/"
+          className="text-[#726E8D] hover:text-black transition-all py-2"
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className="text-[#726E8D] hover:text-black transition-all py-2"
+        >
+          About
+        </Link>
+        <Link
+          href="/products"
+          className="text-[#726E8D] hover:text-black transition-all py-2"
+        >
+          Products
+        </Link>
+        <Link
+          href="/cart"
+          className="text-[#726E8D] hover:text-black transition-all py-2"
+        >
+          Cart
+        </Link>
+      </nav>
+    </div>
   );
 };
 
 export default Header;
+
+
+
+
+
+
+
